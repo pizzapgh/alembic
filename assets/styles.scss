@@ -428,3 +428,110 @@ pre code {
     }
   }
 }
+.typeset h1, p, h2, h3, h4, li, a{
+  font-family: 'Roboto Slab', serif;
+}
+.cb-container{
+  width: 90%;
+  margin: 0 auto;
+  @include breakpoint(break-2){
+    width: 960px;
+    margin: 0 auto;
+  }
+  @include breakpoint(break-4){
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+header ul{
+  list-style: none;
+}
+header ul li:before{
+  content:"\25a0";
+  color: #ff504f;
+  padding-right: 0.5rem;
+}
+header ul li{
+  font-size: 0.9rem;
+  color: #fff;
+}
+header .typeset h1{
+  font-size: 3rem;
+  line-height: 4rem;
+  @include breakpoint(break-2){
+    font-size: 4rem;
+    }
+}
+header img{
+  width: 200px;
+  @include breakpoint(break-1){
+  width: 300px;
+    }
+  @include breakpoint(break-2){
+    width: 390px;
+    }
+    @include breakpoint(break-3){
+      width: 400px;
+      }
+      @include breakpoint(break-4){
+        width: 430px;
+        }
+}
+header img{
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  @include breakpoint(break-1){
+    right: 60px;
+    top: 20px;
+    }
+    @include breakpoint(break-3){
+      right: 255px;
+      top: 16px;
+      }
+      @include breakpoint(break-4){
+        right: 456px;
+        top: 16px;
+        }
+}
+header{
+  background: #74a19e;
+  z-index: 1;
+  height: 570px;
+  margin-top: 2rem;
+  padding-top: 22rem;
+  @include breakpoint(break-1){
+  padding: 1rem 0;
+  height: 360px;
+    }
+@include breakpoint(break-2){
+  padding: 2rem 0;
+  height: 450px;
+  }
+  @include breakpoint(break-3){
+    padding: 2rem 0;
+    height: 455px;
+    }
+    @include breakpoint(break-4){
+      padding: 2rem 0;
+      height: 495px;
+      }
+}
+.cb-button{
+  background: purple;
+  width: 10.5rem;
+  padding: 0.7rem 1rem;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+.cb-button a{
+ color: #fff;
+}
+.typeset ul li, .typeset ol li {
+margin-left: 0;
+}
+.typeset h1{
+  color: #fff;
+  padding-top: 0;
+}

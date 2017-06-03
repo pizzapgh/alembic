@@ -2,9 +2,9 @@
 layout: default
 ---
 
-{% include site-header.html %}
+{% include blog-header.html %}
 
-<main class="main  container">
+<main class="cb-container">
 
 	<div class="content">
 
@@ -12,13 +12,13 @@ layout: default
 
 			{% if paginator.posts %}
 				{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-				<h1>{{ collectiondata.title }}</h1>
+				<h1 class="blog">{{ collectiondata.title }}</h1>
 				{{ collectiondata.description | markdownify }}
 
 			{% else %}
-				<h1>{{ page.title }}</h1>
+				<h1 class="blog">{{ page.title }}</h1>
 				{{ content }}
-				
+
 			{% endif %}
 
     </article>
@@ -31,4 +31,4 @@ layout: default
 
 </main>
 
-{% include site-footer.html %}
+{% include footer.html %}

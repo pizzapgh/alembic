@@ -431,15 +431,22 @@ pre code {
 .typeset h1, p, h2, h3, h4, li, a{
   font-family: 'Roboto Slab', serif;
 }
+*{
+  transition: .5s;
+}
 .cb-container{
   width: 90%;
   margin: 0 auto;
   @include breakpoint(break-2){
-    width: 960px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include breakpoint(break-3){
+    width: 900px;
     margin: 0 auto;
   }
   @include breakpoint(break-4){
-    width: 1100px;
+    width: 1000px;
     margin: 0 auto;
   }
 }
@@ -463,44 +470,36 @@ header .typeset h1{
     }
 }
 header img{
-  width: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+right: 45px;
+width: 99px;
   @include breakpoint(break-1){
-  width: 300px;
+    right: 60px;
+    top: 8px;
+    width: 300px;
     }
-  @include breakpoint(break-2){
-    width: 390px;
-    }
+    @include breakpoint(break-2){
+      width: 390px;
+      }
     @include breakpoint(break-3){
+      right: 155px;
+      top: 9px;
       width: 400px;
       }
       @include breakpoint(break-4){
-        width: 430px;
-        }
-}
-header img{
-  position: absolute;
-  z-index: 2;
-  top: 16px;
-  @include breakpoint(break-1){
-    right: 60px;
-    top: 20px;
-    }
-    @include breakpoint(break-3){
-      right: 255px;
-      top: 9px;
-      }
-      @include breakpoint(break-4){
-        right: 456px;
+        right: 356px;
         top: 16px;
+        width: 430px;
         }
 }
 header{
   background: #74a19e;
   z-index: 1;
-  height: 570px;
-  margin-top: 2rem;
-  padding-top: 22rem;
+  padding: 2rem 0;
   @include breakpoint(break-1){
+  margin-top: 2rem;
   padding: 1rem 0;
   height: 360px;
     }
@@ -542,4 +541,197 @@ margin-left: 0;
 }
 .cb-bold-2{
   font-weight: 700;
+}
+
+.box{
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-right: 3rem;
+   box-shadow: 0 2px 45px rgba(0, 0, 0, 0.3);
+      @include breakpoint(break-4){
+        width: 520px;
+        height: 310px;
+        }
+}
+.box img{
+  width: 100%;
+    height: 100%;
+}
+.portfolio-1{
+justify-content: space-between;
+}
+.portfolio{
+  @include breakpoint(break-2){
+    display: flex;
+    justify-content: space-between;
+    }
+}
+main{
+  padding: 4rem 0;
+}
+h2.typeset{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff504f;
+  margin-bottom: 2rem;
+}
+.box:last-child{
+  margin-right: 0;
+}
+.cb-push{
+  margin-top: 3rem;
+}
+
+
+/*----------------------
+footer
+-----------------------*/
+
+section.resume{
+  background: #ff504f;
+  padding: 5rem 0;
+}
+section.resume h2.typeset{
+  font-size: 2.7rem;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 3.5rem;
+  text-align: center;
+  line-height: 42px;
+  @include breakpoint(break-2){
+  font-size: 3.4rem;
+  }
+}
+.get-at-me{
+  list-style: none;
+  color: #fff;
+  text-align: center;
+  @include breakpoint(break-2){
+      width: 600px;
+    margin: 0 auto;
+      display: flex;
+        justify-content: space-around;
+  }
+  @include breakpoint(break-3){
+      width: 800px;
+    margin: 0 auto;
+      display: flex;
+        justify-content: space-around;
+  }
+}
+.get-at-me li:first-child{
+  font-size: 1.6rem;
+}
+.get-at-me li:last-child{
+  font-size: 1.3rem;
+}
+.get-at-me li a{
+  color: #ffd41d;
+  border-bottom: 1px solid #ffd41d;
+}
+.social{
+  list-style: none;
+  color: #74a19e;
+  font-weight: 400;
+  text-align: center;
+  @include breakpoint(break-2){
+      width: 270px;
+    margin: 0 auto;
+      display: flex;
+        justify-content: space-around;
+  }
+}
+.social li a{
+  color: #74a19e;
+
+}
+.social li a:hover{
+  color: #547775;
+}
+.cb-bold-3{
+    font-weight: 700;
+}
+i{
+  margin-right: 0.5rem;
+}
+.cb-footer{
+  padding: 3rem 0;
+}
+.cb-footer p{
+display: inline-block;
+}
+.cb-footer ul{
+  display: inline-block;
+}
+.social li{
+  display: inline-block;
+  margin-right: 2rem;
+}
+.contact li:last-child{
+  margin-right: 0;
+}
+.contact{
+  text-align: center;
+  @include breakpoint(break-2){
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  @include breakpoint(break-3){
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.contact p{
+  color: #74a19e;
+  margin-bottom: 1rem;
+  @include breakpoint(break-3){
+    margin-right: 2.3rem;
+  }
+}
+header h1 a{
+  color: #fff;
+}
+h1 a:hover{
+  color: #fff;
+}
+.cb-hover{
+  transition: .5s;
+  color:#fff;
+}
+.cb-hover:hover{
+  color: #fff !important;
+  -webkit-transform: translateY(-12px);
+    -moz-transform: translateY(-12px);
+     -ms-transform: translateY(-12px);
+      -o-transform: translateY(-12px);
+         transform: translateY(-12px);
+}
+.cb-transition:hover{
+  background: #4f3c5e;
+}
+.box:hover{
+  -webkit-transform: translateY(-12px);
+    -moz-transform: translateY(-12px);
+     -ms-transform: translateY(-12px);
+      -o-transform: translateY(-12px);
+         transform: translateY(-12px);
+}
+h1.blog{
+  color: #ff504f;
+}
+h2 a{
+  color: #654c78;
+}
+h2 a:hover{
+  color:#4f3c5e;
+}
+.typeset p a, .typeset li a {
+background-image: linear-gradient(to bottom, transparent 50%, #74a19e 50%);
+}
+.typeset p a:hover, .typeset p a:active, .typeset p a:focus, .typeset li a:hover, .typeset li a:active, .typeset li a:focus {
+background-image: linear-gradient(to bottom, transparent 50%, #648c89 50%);
 }

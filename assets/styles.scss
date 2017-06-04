@@ -437,6 +437,7 @@ pre code {
 .cb-container{
   width: 90%;
   margin: 0 auto;
+  position: relative;
   @include breakpoint(break-2){
     width: 90%;
     margin: 0 auto;
@@ -472,25 +473,23 @@ header .typeset h1{
 header img{
   position: absolute;
   z-index: 2;
-  top: 5px;
+  top: -18px;
 right: 45px;
 width: 99px;
   @include breakpoint(break-1){
-    right: 60px;
-    top: 8px;
-    width: 300px;
+    right: -10px;
+    width: 200px;
     }
     @include breakpoint(break-2){
+      top: -57px;
       width: 390px;
       }
     @include breakpoint(break-3){
-      right: 155px;
-      top: 9px;
+      top: -57px;
+      right: 10px;
       width: 400px;
       }
       @include breakpoint(break-4){
-        right: 356px;
-        top: 16px;
         width: 430px;
         }
 }
@@ -518,15 +517,16 @@ header{
 }
 .cb-button{
   background: #654c78;
-  width: 10.5rem;
-  padding: 0.7rem 1rem;
-  display: block;
   cursor: pointer;
+  width: 10rem;
   text-align: center;
       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 .cb-button a{
  color: #fff;
+ display: block;
+ width: 10.5rem;
+padding: 0.7rem 0rem;
 }
 .typeset ul li, .typeset ol li {
 margin-left: 0;
@@ -734,4 +734,57 @@ background-image: linear-gradient(to bottom, transparent 50%, #74a19e 50%);
 }
 .typeset p a:hover, .typeset p a:active, .typeset p a:focus, .typeset li a:hover, .typeset li a:active, .typeset li a:focus {
 background-image: linear-gradient(to bottom, transparent 50%, #648c89 50%);
+}
+
+.lb-image {
+border-radius: 0 !important;
+border: 0px solid !important;
+}
+.get-at-me li a:hover {
+    color: #d4af14;
+    border-bottom: 1px solid #d4af14;
+}
+.cb-container-resume{
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  @include breakpoint(break-2){
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include breakpoint(break-3){
+    width: 900px;
+    margin: 0 auto;
+  }
+  @include breakpoint(break-4){
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.cb-container-resume::after {
+    @include breakpoint(break-3){
+      content: url(./right-icons.png);
+      position: absolute;
+      z-index: 1;
+      right: -350px;
+      bottom: -120px;
+    }
+    @include breakpoint(break-4){
+      right: -571px;
+      bottom: -150px;
+    }
+}
+.cb-container-resume::before {
+    @include breakpoint(break-3){
+      content: url(./left-icons.png);
+      position: absolute;
+      z-index: 1;
+      left: -350px;
+      bottom: -120px;
+    }
+    @include breakpoint(break-4){
+      left: -571px;
+      bottom: -120px;
+    }
 }

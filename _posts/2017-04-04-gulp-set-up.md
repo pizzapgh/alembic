@@ -6,7 +6,7 @@ excerpt: Thanks to a blogger by the name of Tania Rascia, I learned how use gulp
 
 ![alt text](/assets/gulp-logo.png "fart")
 
-# Setting up gulp
+### Setting up gulp
 Thanks to a kind blogger, I learned how to use gulp and set it up with my projects. Below are my notes. For a more in-depth explanation, visit [Tania Rascia's Site](https://www.taniarascia.com/getting-started-with-gulp//)
 
 Gulp is a swiss army knife for web developers. It's a javascript task runner for project workflows utilizing helpful plugins such as sass and auto prefixers etc...

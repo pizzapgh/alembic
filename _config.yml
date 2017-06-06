@@ -52,7 +52,7 @@ sass:
   style: compressed # Style compression
 permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+timezone: US/Eastern # Timezone for blog posts and alike
 
 # 5. Collections
 collections:
@@ -84,11 +84,11 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 title: "Chris Brennan | Designer" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
-repo: "https://github.com/daviddarnes/alembic"
-email: "me@daviddarnes.com"
+logo: "/assets/intro-pic.png" # Site logo, also used in jekyll-seo-tag
+description: "Chris Brennan | Designer" # Site description and default description, also used in jekyll-seo-tag
+url: "http://chrisbrennanpgh.com/" # Site url, also used in jekyll-seo-tag
+repo: "https://github.com/pizzapgh"
+email: "chrisbrennanpgh@gmail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 avatarurl: "https://en.gravatar.com/userimage/95175156/73e259aa00c36886d67fc8353a0665d0" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 

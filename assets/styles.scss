@@ -769,6 +769,7 @@ border: 0px solid !important;
 }
 
 .cb-container-resume::after {
+  right: -3px;
     @include breakpoint(break-3){
       content: url(./right-icons.png);
       position: absolute;
@@ -777,7 +778,7 @@ border: 0px solid !important;
       bottom: -120px;
     }
     @include breakpoint(break-4){
-      right: -571px;
+      right: -481px;
       bottom: -150px;
     }
 }
@@ -790,7 +791,7 @@ border: 0px solid !important;
       bottom: -120px;
     }
     @include breakpoint(break-4){
-      left: -571px;
+      left: -481px;
       bottom: -120px;
     }
 }

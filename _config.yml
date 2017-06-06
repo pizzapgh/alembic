@@ -57,9 +57,9 @@ timezone: Europe/London # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: Posts # Needed for Siteleaf
+    title:  # Needed for Siteleaf
     output: true
-    description: "My collection of notes about dev and design topics." # The post list page content
+    description:  # The post list page content
     feature_text: |
       Welcome to the blog
     feature_image: "https://unsplash.it/1300/400?image=1067"

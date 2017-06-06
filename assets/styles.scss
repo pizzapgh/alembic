@@ -431,9 +431,7 @@ pre code {
 .typeset h1, p, h2, h3, h4, li, a{
   font-family: 'Roboto Slab', serif;
 }
-*{
-  transition: .5s;
-}
+
 .cb-container{
   width: 90%;
   margin: 0 auto;
@@ -460,11 +458,16 @@ header ul li:before{
   padding-right: 0.5rem;
 }
 header ul li{
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #fff;
+  margin-bottom: 0.7rem;
+  @include breakpoint(break-2){
+    font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
 }
 header .typeset h1{
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 4rem;
   @include breakpoint(break-2){
     font-size: 4rem;
@@ -473,12 +476,12 @@ header .typeset h1{
 header img{
   position: absolute;
   z-index: 2;
-  top: -18px;
-right: 45px;
-width: 99px;
+    top: -305px;
+width: 227px;
   @include breakpoint(break-1){
     right: -10px;
-    width: 200px;
+    top: -26px;
+    width: 308px;
     }
     @include breakpoint(break-2){
       top: -57px;
@@ -490,13 +493,15 @@ width: 99px;
       width: 400px;
       }
       @include breakpoint(break-4){
-        width: 430px;
+        width: 433px;
         }
 }
 header{
   background: #74a19e;
   z-index: 1;
   padding: 2rem 0;
+  padding-top: 24rem;
+    margin-top: 2rem;
   @include breakpoint(break-1){
   margin-top: 2rem;
   padding: 1rem 0;
@@ -512,7 +517,7 @@ header{
     }
     @include breakpoint(break-4){
       padding: 2rem 0;
-      height: 495px;
+      height: 508px;
       }
 }
 .cb-button{
@@ -525,8 +530,8 @@ header{
 .cb-button a{
  color: #fff;
  display: block;
- width: 10.5rem;
 padding: 0.7rem 0rem;
+      transition: .5s;
 }
 .typeset ul li, .typeset ol li {
 margin-left: 0;
@@ -548,6 +553,7 @@ margin-left: 0;
   margin-bottom: 2rem;
   margin-right: 3rem;
    box-shadow: 0 2px 45px rgba(0, 0, 0, 0.3);
+     transition: .5s;
       @include breakpoint(break-4){
         width: 520px;
         height: 310px;
@@ -721,7 +727,7 @@ h1 a:hover{
          transform: translateY(-12px);
 }
 h1.blog{
-  color: #ff504f;
+  color: #74a19e;
 }
 h2 a{
   color: #654c78;
@@ -787,4 +793,28 @@ border: 0px solid !important;
       left: -571px;
       bottom: -120px;
     }
+}
+h2.blue-h2{
+  color: #654c78;
+}
+.typeset p a, .typeset li a {
+background-image: none;
+color: #74a19e;
+}
+.typeset p a:hover, .typeset li a:hover {
+background-image: none;
+color: #67908d;
+}
+.article--post p{
+  color: #ff504f;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.article--post h2 a{
+  font-size: 2.3rem;
+}
+.content p{
+  font-size: 1.2rem;
+  font-weight: 400;
 }
